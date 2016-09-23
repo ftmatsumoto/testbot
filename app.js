@@ -306,6 +306,10 @@ function receivedMessage(event) {
         sendAccountLinking(senderID);
         break;
 
+      case 'quero me matricular':
+        sendButtonMessage(senderID);
+        break;
+
       default:
         sendTextMessage(senderID, messageText);
     }
